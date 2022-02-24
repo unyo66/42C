@@ -1,0 +1,40 @@
+꼭 외워갈 것
+
+.vimrc에
+set nu
+syntax on
+set autoindent
+set cindent
+set mouse=a
+
+malloc 표기법
+#include <stdlib.h>
+1. 할당할 배열명 선언
+	char *str;
+2. 배열명에 원하는 크기만큼 동적할당, 형변환(malloc은 기본적으로 void형)
+	str = (char *)malloc(sizeof(char) * len)
+3. 널 가드
+	if (!str)
+	  return (0);
+
+순서
+aff_z
+ft_print_numbers
+fizzbuzz : 3 5번째
+	3, 5로 나눈 나머지 0인 인덱스 문자열 출력
+rev_print : 문자열 거꾸로 집어넣기
+	i = strlen(str); i--하며 반복 출력
+aff_last_param : 마지막 값 출력
+	argv[argc - 1][i] 출력 i++
+ulstr : 대 -> 소, 소 -> 대
+ft_strcpy
+	s2[i] != '\0' 까지 집어넣고 널 찍기
+ft_strrev : 문자열 뒤집기
+	길이 재서 i와 마지막 바꾸고 i++ 마지막--
+ft_atoi
+	공백 플마만큼 i밀고 숫자일때만 조건반복{ ret *= 10; ret += str[i] - '0'; i++;}
+union
+	str1부터 중복 제거해서 출력, str2 하나씩 str1과 비교하며 중복제거해서 출력(이중반복)
+ft_range : int1 in2 사이값 반환
+	size = int1 - int2 의 절대값, size + 1만큼 동적할당해서 하나씩 채워넣기
+
